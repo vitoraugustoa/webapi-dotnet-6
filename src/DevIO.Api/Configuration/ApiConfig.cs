@@ -27,7 +27,6 @@ namespace DevIO.Api.Configuration
             services.Configure<ApiBehaviorOptions>(options =>
             {
                 options.SuppressModelStateInvalidFilter = true;
-
             });
 
             services.AddCors(options =>
@@ -38,7 +37,6 @@ namespace DevIO.Api.Configuration
                         .AllowAnyOrigin()
                         .AllowAnyMethod()
                         .AllowAnyHeader());
-
 
                 options.AddPolicy("Production",
                     builder =>
